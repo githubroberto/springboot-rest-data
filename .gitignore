@@ -1,0 +1,8 @@
+### Maven template
+target/
+
+### Intellij template
+*.iml
+.idea/
+*.ipr
+*.iws
