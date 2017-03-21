@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.Collections;
 
 @Service
 public class StockServiceImpl implements StockService {
@@ -17,10 +18,18 @@ public class StockServiceImpl implements StockService {
     }
 
     public Collection<Stock> stocks() {
-        return stockRepository.stocks();
+        try {
+            return stockRepository.stocks();
+        } catch (Exception exception) {
+            return Collections.emptyList();
+        }
     }
 
     public Stock stock(Integer stockId) {
-        return stockRepository.stock(stockId);
+        try {
+            return stockRepository.stock(stockId);
+        } catch (Exception exception) {
+            return null;
+        }
     }
 }
