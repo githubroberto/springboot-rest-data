@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Collections;
-
+// Disabled because it is default repository implementation
 //@Repository
 public class StockRepositoryImpl implements StockRepository {
     public Collection<Stock> stocks() {
