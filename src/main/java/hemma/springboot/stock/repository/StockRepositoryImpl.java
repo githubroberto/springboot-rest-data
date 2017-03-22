@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.Collections;
 
-@Repository
+//@Repository
 public class StockRepositoryImpl implements StockRepository {
     public Collection<Stock> stocks() {
         return Collections.singleton(Stock.builder().id(1000)
