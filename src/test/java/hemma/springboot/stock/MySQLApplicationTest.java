@@ -35,7 +35,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-//@ContextConfiguration(classes = {MySQLTestConfiguration.class}) Configuration disabled, static one is used instead
 public class MySQLApplicationTest {
 
     @Autowired
